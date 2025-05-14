@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Produk - Toko Sepatu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff9900;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .produk-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .produk-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .produk-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .produk-card img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .produk-card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .produk-card p {
+      color: #777;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #222;
+      color: #fff;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Produk Kami</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="produk.html">Produk</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <div class="produk-container">
+    <div class="produk-card">
+      <img src="c:\Users\ASUS\Pictures\nike 3.jpeg" alt="Sepatu 1" />
+      <h3>NIke Cortez clasik Blue</h3>
+      <p>Rp 750.000</p>
+    </div>
+    <div class="produk-card">
+      <img src="c:\Users\ASUS\Pictures\sepatu 2.jpg" alt="Sepatu 2" />
+      <h3>nike Cortez Black series</h3>
+      <p>Rp 1.000.000</p>
+    </div>
+    <div class="produk-card">
+      <img src="c:\Users\ASUS\Pictures\nike-cortez.jpg" alt="Sepatu 3" />
+      <h3>Nike Cortez Original</h3>
+      <p>Rp 1.000.000</p>
+    </div>
+    <div class="produk-card">
+      <img src="c:\Users\ASUS\Pictures\nike.jpeg" alt="Sepatu 4" />
+      <h3>Nike Air Max Black</h3>
+      <p>Rp 470.000</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Toko Sepatu Keren</p>
+  </footer>
+</body>
+</html>
